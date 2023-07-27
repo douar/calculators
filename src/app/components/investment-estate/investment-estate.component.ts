@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {IBaseNumbers} from "../../interface/IBaseNumbers";
 
 @Component({
   selector: 'app-investment-estate',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class InvestmentEstateComponent {
 
+  baseNumbers: IBaseNumbers = {}
+  constructor() {}
+
+  consoleChange(){
+    console.log(this.baseNumbers)
+  }
 }
